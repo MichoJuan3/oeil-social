@@ -4,115 +4,169 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Oeil Social : créativité, entrepreneuriat digital et ressources pour développer vos projets en ligne.">
+  <meta name="description" content="Oeil Social : découvrez des conseils, idées et ressources pour développer votre présence digitale et explorer la monétisation de contenu.">
+  <meta name="theme-color" content="#171126">
   <title>Oeil Social | Créez. Innovez. Monétisez.</title>
   <style>
     :root {
       color-scheme: dark;
-      --bg: #120f21;
-      --card: #211936;
+      --bg: #171126;
+      --card: #251b39;
       --purple: #9355e9;
       --text: #ffffff;
-      --muted: #c9bedb;
+      --muted: #d4c6e8;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       min-height: 100vh;
       font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #43226b, var(--bg) 65%);
+      background: radial-gradient(circle at top, #40245e, var(--bg) 70%);
       color: var(--text);
+      line-height: 1.6;
     }
     main {
-      max-width: 480px;
+      max-width: 560px;
       margin: auto;
-      padding: 55px 22px 35px;
+      padding: 48px 20px 30px;
       text-align: center;
     }
     .logo {
-      width: 96px;
-      height: 96px;
+      width: 104px;
+      height: 104px;
       margin: 0 auto 20px;
+      border: 4px solid #b995fa;
+      border-radius: 50%;
+      background: var(--purple);
       display: grid;
       place-items: center;
-      background: var(--purple);
-      border: 4px solid #b998f4;
-      border-radius: 50%;
-      font-size: 48px;
+      font-size: 52px;
     }
-    h1 { margin: 10px 0; font-size: 32px; }
-    .tagline { font-weight: bold; color: #d8baff; }
-    .description {
+    h1 { font-size: 38px; margin: 0; }
+    h2 { font-size: 23px; margin: 0 0 12px; }
+    .slogan {
+      color: #d8b4fe;
+      font-size: 19px;
+      font-weight: bold;
+    }
+    .intro {
       color: var(--muted);
-      line-height: 1.7;
-      margin: 20px 0 32px;
+      margin: 20px 0 30px;
     }
-    .links { display: grid; gap: 14px; }
-    .link {
+    .btn {
       display: block;
-      padding: 18px;
-      border-radius: 14px;
+      width: 100%;
+      padding: 17px;
+      margin: 12px 0;
+      border: 1px solid #70528f;
+      border-radius: 15px;
       background: var(--card);
-      border: 1px solid #68518b;
       color: white;
       text-decoration: none;
+      font-size: 17px;
       font-weight: bold;
-      transition: transform .2s, background .2s;
-    }
-    .link:hover, .link:focus-visible {
-      transform: translateY(-2px);
-      background: #59348d;
     }
     .primary {
       background: var(--purple);
       border-color: var(--purple);
     }
-    .notice {
-      margin-top: 30px;
-      font-size: 12px;
-      line-height: 1.6;
+    a.btn:hover { background: #7440bf; }
+    a:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 3px;
+    }
+    section {
+      margin: 34px 0;
+      padding: 24px 18px;
+      background: rgba(37, 27, 57, .85);
+      border: 1px solid #594472;
+      border-radius: 20px;
+    }
+    section p { color: var(--muted); }
+    .topics {
+      text-align: left;
+      padding-left: 24px;
       color: var(--muted);
+    }
+    .topics li { margin: 8px 0; }
+    .coming {
+      padding: 14px;
+      border: 1px dashed #9d7bc6;
+      border-radius: 12px;
+      color: #e0cafa;
     }
     footer {
       margin-top: 35px;
-      font-size: 13px;
       color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 480px) {
+      main { padding-top: 32px; }
+      h1 { font-size: 32px; }
+      .btn { font-size: 16px; }
     }
   </style>
 </head>
 <body>
   <main>
-    <div class="logo" aria-hidden="true">◉</div>
+    <header>
+      <div class="logo" aria-hidden="true">◉</div>
+      <h1>Oeil Social</h1>
+      <p class="slogan">Créez. Innovez. Monétisez.</p>
+      <p class="intro">
+        Transformez votre créativité en opportunités.
+        Découvrez des idées et des ressources pour
+        développer votre présence digitale.
+      </p>
+    </header>
 
-    <h1>Oeil Social</h1>
-    <p class="tagline">Créez. Innovez. Monétisez.</p>
+    <a class="btn primary" href="#monetisation">
+      ✨ Découvrir la monétisation digitale
+    </a>
 
-    <p class="description">
-      Votre créativité peut devenir une opportunité.
-      Découvrez des ressources, des idées et des outils
-      pour développer vos projets digitaux.
-    </p>
+    <section id="monetisation">
+      <h2>Monétisation digitale</h2>
+      <p>
+        Explorez les différentes possibilités de
+        valoriser votre contenu et votre créativité.
+      </p>
+      <ul class="topics">
+        <li>Création de contenu digital</li>
+        <li>Marketing d'affiliation</li>
+        <li>Publicité et partenariats</li>
+        <li>Développement d'une audience engagée</li>
+      </ul>
+    </section>
 
-    <nav class="links" aria-label="Nos ressources">
-      <a class="link primary"
-         href="https://linktr.ee/oeil.social">
-        📚 Explorer nos ressources
-      </a>
+    <section>
+      <h2>Retrouvez-nous sur TikTok</h2>
+      <p>
+        Découvrez nos contenus sur la créativité,
+        le marketing digital et les opportunités en ligne.
+      </p>
+      <p>
+        Notre lien TikTok sera ajouté prochainement.
+      </p>
+    </section>
 
-      <a class="link"
-         href="https://techwemate.com/">
-        💡 Conseils en marketing digital
-      </a>
-    </nav>
-
-    <p class="notice">
-      Transparence : certains liens peuvent être
-      promotionnels ou affiliés. Les revenus ne sont
-      jamais garantis.
-    </p>
+    <section>
+      <h2>📢 Contenus sponsorisés</h2>
+      <p>
+        Nous préparons un espace dédié à la
+        découverte de contenus publicitaires.
+      </p>
+      <div class="coming">
+        Bientôt disponible
+      </div>
+    </section>
 
     <footer>
-      © 2026 Oeil Social. Tous droits réservés.
+      <p>
+        Transparence : certains contenus pourront
+        contenir des liens publicitaires ou affiliés.
+        Les revenus ne sont jamais garantis.
+      </p>
+      <p>© 2026 Oeil Social. Tous droits réservés.</p>
     </footer>
   </main>
 </body>
